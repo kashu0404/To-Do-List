@@ -5,23 +5,26 @@ body {
 
 
 .container {
-    width: 25%;
-    box-shadow: 3px 3px 30px rgb(112, 112, 112);
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 7em;
+
+    width: 80%;
+    max-width: 500px; 
+    /* if width>500px, container width = 500px, else it will take up 80% of the screen */
+    margin: 2em auto;
+    padding: 1em;
     background-color: white;
-    padding: 5em 5em;
-    border-radius: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+    overflow: auto;
+
 }
+
 
 .heading {
     display: flex;
     width: 50%;
     align-items: center;
     margin-bottom: 1em;
+
 }
 
 .heading h1 {
@@ -42,19 +45,24 @@ body {
     grid-template-columns: 12em 9.5em 6em;
     column-gap: 0.7em;
     row-gap: 0.7em;
+    width: 50%;
 }
 
 .todo-grid {
     align-items: center;
+  
 }
 
 .todo-input-grid {
     margin-bottom: 1em;
+   
 }
 
 .task-input, .date-input {
     font-size: 0.85rem;
     padding: 0.6em 0.5em;
+    margin-left: 0.5em;
+    
 }
 
 .add-button {
@@ -62,12 +70,14 @@ body {
     border: none;
     border-radius: 0.8em;
     color: white;
-    background-color: green;
+    background-color: rgb(144, 182, 219);
     cursor: pointer;
+    margin-left: 0.5em;
 }
 
 .js-name-input, .js-date-input {
     font-size: 0.9rem;
+    padding-left: 0.7em;
 }
 
 .delete-button {
@@ -76,6 +86,11 @@ body {
     padding: 0.8em;
     border: none;
     color: white;
-    background-color: darkred;
     cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.delete-button img {
+    width: 25%;
+    height: auto;
 }
