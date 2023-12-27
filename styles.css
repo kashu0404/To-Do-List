@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('images/background.jpg');
+}
+
+
+.container {
+    width: 25%;
+    box-shadow: 3px 3px 30px rgb(112, 112, 112);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 7em;
+    background-color: white;
+    padding: 5em 5em;
+    border-radius: 2em;
+}
+
+.heading {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.heading h1 {
+    font-size: 1.7rem;
+    width: 5em;
+    margin-right: 0.5em;
+}
+
+
+.image-container img {
+   height: 2em;
+   width: 2em;
+}
+
+
+.todo-grid, .todo-input-grid {
+    display: grid;
+    grid-template-columns: 12em 9.5em 6em;
+    column-gap: 0.7em;
+    row-gap: 0.7em;
+}
+
+.todo-grid {
+    align-items: center;
+}
+
+.todo-input-grid {
+    margin-bottom: 1em;
+}
+
+.task-input, .date-input {
+    font-size: 0.85rem;
+    padding: 0.6em 0.5em;
+}
+
+.add-button {
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 0.8em;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+
+.js-name-input, .js-date-input {
+    font-size: 0.9rem;
+}
+
+.delete-button {
+    border-radius: 0.8em;
+    font-size: 0.8rem;
+    padding: 0.8em;
+    border: none;
+    color: white;
+    background-color: darkred;
+    cursor: pointer;
+}
